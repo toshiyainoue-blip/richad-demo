@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="ad.size" content="width=1000,height=1500">
+  <title>Rich Banner Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 広告クリック領域 -->
+  <a id="clickArea" href="https://example.com" target="_blank">
+
+    <div id="banner">
+
+      <!-- フォールバック画像（動画読み込み失敗時用） -->
+      <img id="bg" src="assets/bg.jpg" alt="fallback">
+
+      <!-- メイン動画 -->
+      <video id="banner-video"
+             src="assets/banner.mp4"
+             poster="assets/bg.jpg"
+             playsinline
+             muted
+             autoplay
+             loop></video>
+
+      <!-- スワイプ誘導アイコン -->
+      <img id="teaser" src="assets/teaser.png" alt="swipe">
+
+    </div>
+  </a>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
